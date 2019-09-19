@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+html,
+body {
+  height: cover;
+  margin: 0;
+  font-family: Lobster, cursive, sans-serif;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container-fluid { 
+margin-top: 22px;
+height: cover;
+}
+
+h1 { 
+  text-align: center; 
+  margin-bottom: 38px; 
+  color: #fff; 
+}
+
+h2 { 
+  text-align: center; 
+  margin-bottom: 30px; 
+  color: #fff; 
+}
+
+
+
+div {
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+  font-size: 40px;
+}
+
+span {
+  display: block;
+  font-size: 20px;
+  color: white;
+}
+
+#days {
+  font-size: 100px;
+  color: #db4844;
+}
+#hours {
+  font-size: 100px;
+  color: #f07c22;
+}
+#minutes {
+  font-size: 100px;
+  color: #f6da74;
+}
+#seconds {
+  font-size: 50px;
+  color: #abcd58;
+}
+
+.animated {
+  position: relative;
+}
+
+.animated-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  min-width: 350px;
+  position: relative;
+}
+
+.animated-item {
+  color: #f6da74;
+}
+
+.animated-item {
+  font-size: 52px;
+  line-height: inherit;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  animation: BottomTotop 6s linear infinite 0s;
+}
+.animated-item:nth-child(2n+2) {
+  animation-delay: 2s;
+}
+.animated-item:nth-child(3n+3) {
+  animation-delay: 4s;
+}
+
+@keyframes BottomTotop {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+form{
+  margin-top: 25px;
+  font-size: 20px;
+  position: relative;
+  align-items: center;
+  color: #fff;
+}
+
+button{
+  border-radius: 5px;
+  background-color: #f6da74;
+  color: #db4844;
+}
