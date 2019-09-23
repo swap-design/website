@@ -14,7 +14,7 @@ body{
 }
 
 .headerset{
-	padding-top: 220px;
+	padding-top: 230px;
 	box-sizing: border-box;
 }
 
@@ -30,6 +30,7 @@ body{
  .navbar{
  	width: 100%;
  	background-color: rgba(183, 11, 255, .8); 
+
  }
 
 
